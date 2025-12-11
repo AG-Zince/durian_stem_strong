@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เทคนิคพิเศษทุเรียนคุณภาพ "สูตรขั้วเหนียว" โดย อ.ภพ</title>
+    
+    <!-- Google Fonts: Sarabun (Body) & Kanit (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Config for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Sarabun', 'sans-serif'],
+                        heading: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        durian: {
+                            light: '#FEF9C3', // Light yellow
+                            meat: '#FACC15',  // Gold yellow
+                            rind: '#166534',  // Dark green
+                            leaf: '#4ADE80',  // Light green
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Sarabun', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-green-200 selection:text-green-900">
+
+    <!-- ================= USER CODE: HEADER ================= -->
+    <nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <!-- Logo Image (Larger, No Background) -->
+                <div class="w-16 h-16 flex items-center justify-center">
+                    <img src="https://i.postimg.cc/FR0vwZg8/logo-thippruk-stork-white-01.png" alt="Thippruk Logo" class="w-full h-full object-contain filter drop-shadow-sm bg-white rounded-lg p-1">
+                </div>
+                <!-- Updated Brand Name (Reduced to ~70%) -->
+                <span class="font-bold text-green-800 text-lg md:text-xl tracking-tight font-heading">
+                    สวนทุเรียนคุณภาพ "สูตรปุ๋ย อ.ภพ"
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= END USER CODE: HEADER ================= -->
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1596452292217-10904d60317e?q=80&w=2070&auto=format&fit=crop" alt="Durian Background" class="w-full h-full object-cover opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-b from-green-50/80 to-gray-50"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-green-100 text-green-800 text-sm font-semibold mb-4 shadow-sm border border-green-200">
+                <i class="fas fa-seedling mr-2"></i>เทคนิคการเกษตรขั้นสูง
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-green-900 mb-6 font-heading drop-shadow-sm">
+                เทคนิคพิเศษ <span class="text-yellow-500">ทุเรียนคุณภาพ</span>
+            </h1>
+            <h2 class="text-2xl md:text-4xl font-semibold text-green-700 mb-8 font-heading">
+                "สูตรขั้วเหนียว"
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                ป้องกันดอกร่วง ผลอ่อนร่วง แก้ปัญหา C/N ratio ลดลง<br>ด้วยหลักการวิทยาศาสตร์ โดย อ.ภพ
+            </p>
+
+            <!-- Gallery Added Here -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mt-8">
+                <div class="rounded-xl overflow-hidden shadow-md border-2 border-white hover:scale-105 transition-transform duration-300">
+                    <img src="https://i.postimg.cc/kXYjbjdd/ดอกบาน_(20)_gigapixel_recover_v2_2x.jpg" alt="Durian Flower" class="w-full h-40 md:h-56 object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md border-2 border-white hover:scale-105 transition-transform duration-300">
+                    <img src="https://i.postimg.cc/zX2dgd1m/ดอกมะเข_อพวง_copy.jpg" alt="Durian Bud" class="w-full h-40 md:h-56 object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md border-2 border-white hover:scale-105 transition-transform duration-300">
+                    <img src="https://i.postimg.cc/4NR4T10K/สวนพ_เค_ม_ท_าศาลา_นครศร_ธรรมราช_(1).jpg" alt="Durian Farm 1" class="w-full h-40 md:h-56 object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md border-2 border-white hover:scale-105 transition-transform duration-300">
+                    <img src="https://i.postimg.cc/N0jfzfzP/สวนพ_เค_ม_ท_าศาลา_นครศร_ธรรมราช_(3).jpg" alt="Durian Farm 2" class="w-full h-40 md:h-56 object-cover">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENT WRAPPER -->
+    <main class="container mx-auto px-4 pb-12 max-w-5xl space-y-16">
+
+        <!-- SECTION 1: สาเหตุ -->
+        <section class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+            <div class="bg-green-800 px-6 py-4 border-b-4 border-yellow-400">
+                <h3 class="text-xl md:text-2xl font-bold text-white font-heading flex items-center">
+                    <span class="bg-yellow-400 text-green-900 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg">1</span>
+                    สาเหตุการหลุดร่วงของดอก–ผลอ่อน
+                </h3>
+            </div>
+            <div class="p-6 md:p-8">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="flex-1">
+                        <p class="text-lg text-gray-700 mb-4">
+                            การร่วงเกิดจากการที่ต้นทุเรียนมี <strong class="text-red-600">C/N ratio ลดลง</strong> ทำให้ต้นตีความว่า <span class="italic text-gray-500">“ไม่พร้อมเลี้ยงลูก”</span> จึงสั่งสลัดลูกออก โดยมีสาเหตุหลักๆ เช่น:
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-circle text-red-500 mt-1 mr-3"></i>
+                                <span>แตกใบอ่อนแบบคุมไม่ได้</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cloud-showers-heavy text-blue-500 mt-1 mr-3"></i>
+                                <span>ฝนตกหนักจน C/N ratio เปลี่ยน / ได้รับไนโตรเจนจากฝน</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-tint text-blue-400 mt-1 mr-3"></i>
+                                <span>ให้น้ำมากเกินไป หรือ ให้ N ในดินมากไป</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-thermometer-half text-orange-500 mt-1 mr-3"></i>
+                                <span>อากาศผันผวน ทำให้ Ca เคลื่อนย้ายไม่ได้</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-red-50 p-6 rounded-xl border border-red-100 text-center">
+                        <div class="text-5xl mb-2 text-red-500"><i class="fas fa-arrow-down"></i></div>
+                        <h4 class="text-xl font-bold text-red-700 font-heading">C/N ratio ลดลง</h4>
+                        <div class="my-2 text-gray-400"><i class="fas fa-arrow-down"></i></div>
+                        <h4 class="text-lg font-bold text-gray-800">ต้นสั่ง "ทิ้งลูก"</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: กลไก -->
+        <section class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+            <div class="bg-green-700 px-6 py-4 border-b-4 border-yellow-400">
+                <h3 class="text-xl md:text-2xl font-bold text-white font-heading flex items-center">
+                    <span class="bg-yellow-400 text-green-900 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg">2</span>
+                    กลไกการร่วง: เอทิลีน + การย่อย Ca
+                </h3>
+            </div>
+            <div class="p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Ethylene Side -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="text-lg font-bold text-red-600 mb-3 font-heading flex items-center">
+                            <i class="fas fa-biohazard mr-2"></i> เอทิลีน (Ethylene) สูงขึ้น
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            เมื่อ C/N ลดลง ต้นจะสร้างฮอร์โมนเอทิลีน ซึ่งเป็นตัวเร่งการร่วงของ:
+                        </p>
+                        <div class="flex gap-2 mt-3 flex-wrap">
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">ใบ</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">ดอก</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">ผลอ่อน</span>
+                        </div>
+                    </div>
+
+                    <!-- Calcium Side -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="text-lg font-bold text-blue-600 mb-3 font-heading flex items-center">
+                            <i class="fas fa-bone mr-2"></i> แคลเซียม (Ca) ถูกย่อย
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ca เปรียบเสมือน <strong>"กาวเชื่อม"</strong> ขั้วผล เมื่อเอทิลีนมา Ca จะถูกทำลาย โครงสร้างขั้วผลอ่อนแรง เส้นใยรับน้ำหนักไม่ได้
+                        </p>
+                        <p class="mt-3 text-sm text-blue-800 bg-blue-50 p-2 rounded border border-blue-100">
+                            <i class="fas fa-info-circle mr-1"></i> แคลเซียมจึงสำคัญที่สุดในการทำ "ขั้วเหนียว"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: วิธีแก้ -->
+        <section>
+            <div class="text-center mb-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-green-800 font-heading">
+                    วิธีแก้และ "สูตรขั้วเหนียว"
+                </h3>
+                <p class="text-gray-600 mt-2">ยับยั้งเอทิลีน และ เสริม Ca กลับเข้าไปให้เร็วที่สุด</p>
+            </div>
+
+            <!-- Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500 hover:shadow-lg transition-shadow">
+                    <div class="text-green-500 text-4xl mb-4"><i class="fas fa-hand-paper"></i></div>
+                    <h4 class="text-lg font-bold mb-2">1. ยับยั้งเอทิลีน</h4>
+                    <p class="text-sm text-gray-600">ใช้ <strong>ออกซิน (Auxin)</strong> กดการทำงานของเอทิลีนโดยตรง</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500 hover:shadow-lg transition-shadow">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-tachometer-alt"></i></div>
+                    <h4 class="text-lg font-bold mb-2">2. เติม Ca เร่งด่วน</h4>
+                    <p class="text-sm text-gray-600">ใช้ <strong>คีเลตแคลบี</strong> ที่ดูดซึมเร็วและตรงจุด</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500 hover:shadow-lg transition-shadow">
+                    <div class="text-yellow-500 text-4xl mb-4"><i class="fas fa-apple-alt"></i></div>
+                    <h4 class="text-lg font-bold mb-2">3. บำรุงลูก</h4>
+                    <p class="text-sm text-gray-600">ใช้ <strong>เมทัลทีม</strong> เติมกรดอะมิโนและสารอาหารจำเป็น</p>
+                </div>
+            </div>
+
+            <!-- THE FORMULA TABLE -->
+            <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-1 shadow-lg border border-yellow-200">
+                <div class="bg-white rounded-[1.3rem] p-6 md:p-10">
+                    <div class="flex items-center justify-center mb-6">
+                        <i class="fas fa-flask text-3xl text-green-600 mr-3"></i>
+                        <h3 class="text-2xl md:text-3xl font-bold text-green-800 font-heading text-center">
+                            สูตรขั้วเหนียว (อัตราใช้ต่อน้ำ 200 ลิตร)
+                        </h3>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-green-100 text-gray-500 text-sm uppercase tracking-wider">
+                                    <th class="py-3 px-4 w-[45%]">ผลิตภัณฑ์</th>
+                                    <th class="py-3 px-4 text-right w-[20%]">อัตราการใช้</th>
+                                    <th class="py-3 px-4 hidden md:table-cell w-[35%]">คุณสมบัติเด่น</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 text-gray-700">
+                                <!-- Auxin -->
+                                <tr class="hover:bg-green-50 transition-colors bg-green-50/50">
+                                    <td class="py-6 px-4 font-bold text-green-900 flex items-center gap-4">
+                                        <!-- Increased Size -->
+                                        <div class="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-green-100 rounded-xl text-green-600 shadow-sm border border-green-200">
+                                            <i class="fas fa-prescription-bottle text-4xl"></i>
+                                        </div>
+                                        <div>
+                                            <span class="block text-lg">ออกซิน 4.5%</span>
+                                            <span class="text-sm text-green-600 font-normal md:hidden">ช่วงดอกบาน</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 px-4 text-right font-bold align-middle text-lg">40–50 cc</td>
+                                    <td class="py-6 px-4 text-base text-gray-600 hidden md:table-cell align-middle leading-relaxed">ใช้เฉพาะช่วงบำรุงดอก / ยับยั้งการร่วง</td>
+                                </tr>
+                                
+                                <!-- Chelate Cal-B -->
+                                <tr class="hover:bg-green-50 transition-colors">
+                                    <td class="py-6 px-4 font-semibold flex items-center gap-4">
+                                        <!-- Increased Size -->
+                                        <img src="https://i.postimg.cc/6Qsvswtd/ค_เลตแคล_บ_02_copy.png" alt="Chelate Cal-B" class="w-24 h-24 object-contain bg-white rounded-xl border border-gray-100 p-1 shadow-sm">
+                                        <span class="text-lg">คีเลตแคล-บี</span>
+                                    </td>
+                                    <td class="py-6 px-4 text-right font-bold align-middle text-lg">300–400 cc</td>
+                                    <td class="py-6 px-4 text-base text-gray-600 hidden md:table-cell align-middle leading-relaxed">เติมแคลเซียมเร่งด่วน / ดูดซึมไว</td>
+                                </tr>
+                                
+                                <!-- Metal Max / Metal Amino -->
+                                <tr class="hover:bg-green-50 transition-colors">
+                                    <td class="py-6 px-4 font-semibold flex items-center gap-4">
+                                        <!-- Increased Size -->
+                                        <div class="flex -space-x-4 overflow-hidden py-1">
+                                            <img src="https://i.postimg.cc/qvqwL2xF/เมท_ลแมกซ_copy.webp" alt="Metal Max" class="w-20 h-20 inline-block object-contain bg-white rounded-full border border-gray-100 ring-4 ring-white shadow-sm">
+                                            <img src="https://i.postimg.cc/brL00vDD/เมท_ล_อะม_โน_copy.webp" alt="Metal Amino" class="w-20 h-20 inline-block object-contain bg-white rounded-full border border-gray-100 ring-4 ring-white shadow-sm">
+                                        </div>
+                                        <span class="text-base md:text-lg">เมทัล-แม็กซ์ / อะมิโน</span>
+                                    </td>
+                                    <td class="py-6 px-4 text-right font-bold align-middle text-lg">200-300 cc</td>
+                                    <td class="py-6 px-4 text-base text-gray-600 hidden md:table-cell align-middle leading-relaxed">บำรุงลูกให้สมบูรณ์ / ขยายขนาด</td>
+                                </tr>
+
+                                <!-- Zinc Turbo -->
+                                <tr class="hover:bg-green-50 transition-colors">
+                                    <td class="py-6 px-4 font-semibold flex items-center gap-4">
+                                        <!-- Increased Size -->
+                                        <img src="https://i.postimg.cc/qq7tcvXK/ซ_งค_เทอร_โบ.webp" alt="Zinc Turbo" class="w-24 h-24 object-contain bg-white rounded-xl border border-gray-100 p-1 shadow-sm">
+                                        <span class="text-lg">ซิ้งค์เทอร์โบ</span>
+                                    </td>
+                                    <td class="py-6 px-4 text-right font-bold align-middle text-lg">100-150 cc</td>
+                                    <td class="py-6 px-4 text-base text-gray-600 hidden md:table-cell align-middle leading-relaxed">เสริมความแข็งแรง / ทนอากาศเปลี่ยนแปลง</td>
+                                </tr>
+
+                                <!-- Hurricane (Updated Description) -->
+                                <tr class="hover:bg-green-50 transition-colors">
+                                    <td class="py-6 px-4 font-semibold flex items-center gap-4">
+                                        <!-- Increased Size -->
+                                        <img src="https://i.postimg.cc/Wp9qN0TB/เฮอร_เคน.webp" alt="Hurricane" class="w-24 h-24 object-contain bg-white rounded-xl border border-gray-100 p-1 shadow-sm">
+                                        <span class="text-lg">เฮอริเคน</span>
+                                    </td>
+                                    <td class="py-6 px-4 text-right font-bold align-middle text-lg">150-200 cc</td>
+                                    <td class="py-6 px-4 text-base text-gray-600 hidden md:table-cell align-middle leading-relaxed">
+                                        <span class="text-green-700 font-medium">เกราะป้องกันพืชจากความเครียด</span><br>
+                                        <span class="text-sm">(ร้อนจัด, แล้ง, น้ำท่วม) ด้วย Plant Based Amino 30% และสารต้านอนุมูลอิสระ</span>
+                                    </td>
+                                </tr>
+
+                                <!-- Thippruk (Updated Description) -->
+                                <tr class="hover:bg-green-50 transition-colors">
+                                    <td class="py-6 px-4 font-semibold flex items-center gap-4">
+                                        <!-- Increased Size -->
+                                        <img src="https://i.postimg.cc/pXx1D9S3/ท_พย_พฤกษา.webp" alt="Thippruk" class="w-24 h-24 object-contain bg-white rounded-xl border border-gray-100 p-1 shadow-sm">
+                                        <span class="text-lg">ทิพย์พฤกษา</span>
+                                    </td>
+                                    <td class="py-6 px-4 text-right font-bold align-middle text-lg">50 cc</td>
+                                    <td class="py-6 px-4 text-base text-gray-600 hidden md:table-cell align-middle leading-relaxed">
+                                        ช่วยให้ปุ๋ยยากระจายตัวสม่ำเสมอ ไม่กองเป็นหยด<br>
+                                        <span class="text-green-700">ทนการชะล้างของฝน</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Enhanced Results Section -->
+                    <div class="mt-10 bg-gradient-to-r from-green-100 to-green-50 p-8 rounded-2xl border border-green-200 shadow-sm">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                            <div class="text-green-800 font-bold flex items-center">
+                                <div class="bg-white p-3 rounded-full shadow-sm mr-4">
+                                    <i class="fas fa-thumbs-up text-4xl text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-2xl md:text-3xl font-heading mb-1">ผลลัพธ์ที่ได้</h4>
+                                    <p class="text-green-600 font-normal">เมื่อใช้สูตรขั้วเหนียวอย่างต่อเนื่อง</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-3 justify-center md:justify-end flex-1">
+                                <span class="bg-white text-green-800 px-5 py-3 rounded-xl text-lg font-bold shadow-sm border border-green-100 flex items-center hover:scale-105 transition-transform">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>ลดการร่วง
+                                </span>
+                                <span class="bg-white text-green-800 px-5 py-3 rounded-xl text-lg font-bold shadow-sm border border-green-100 flex items-center hover:scale-105 transition-transform">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>ขั้วเหนียว
+                                </span>
+                                <span class="bg-white text-green-800 px-5 py-3 rounded-xl text-lg font-bold shadow-sm border border-green-100 flex items-center hover:scale-105 transition-transform">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>ติดผลสูง
+                                </span>
+                                <span class="bg-white text-green-800 px-5 py-3 rounded-xl text-lg font-bold shadow-sm border border-green-100 flex items-center hover:scale-105 transition-transform">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>ทนฝน/อากาศผันผวน
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= USER CODE: BOTTOM/FOOTER ================= -->
+    <section class="py-10 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- 1. Image Banner (Primary View) - Requires 'contact2.webp' in folder -->
+            <!-- The 'onerror' will hide this image and show the responsive fallback if file is missing -->
+            <img
+                src="contact2.webp"
+                alt="Contact Channels AG-ZIENCE"
+                class="w-full h-auto rounded-xl shadow-sm object-contain mx-auto"
+                onerror="this.style.display='none'; document.getElementById('contact-fallback').classList.remove('hidden');"
+            >
+
+            <!-- 2. Responsive Fallback (Shows if image is broken OR can be enabled for mobile) -->
+            <!-- Initially hidden by 'hidden' class, shown by onerror script above -->
+            <div id="contact-fallback" class="hidden">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8 p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                    
+                    <!-- Left: Logos -->
+                    <div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                        <!-- AG-ZIENCE Image Logo (Replaces Text) -->
+                        <div class="w-48 h-auto flex-shrink-0">
+                            <img src="https://i.postimg.cc/Jh8b2SdJ/logo-ag-zience-02.png" alt="AG-ZIENCE Logo" class="w-full h-full object-contain">
+                        </div>
+                        <!-- Thippruk Logo -->
+                        <div class="w-20 h-20 bg-white rounded-lg p-2 shadow-sm border border-gray-100 flex-shrink-0">
+                            <img src="https://i.postimg.cc/FR0vwZg8/logo-thippruk-stork-white-01.png" alt="Thippruk" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Middle: Social Links (Updated with Links & Line OpenChat) -->
+                    <div class="flex flex-col gap-3 w-full max-w-lg">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/groups/159157714503728/" target="_blank" class="flex items-center gap-3 bg-white p-2 rounded-lg shadow-sm hover:bg-blue-50 transition-colors border border-gray-100 group">
+                            <i class="fa-brands fa-facebook text-blue-600 text-3xl w-8 text-center group-hover:scale-110 transition-transform"></i>
+                            <span class="font-medium text-gray-700 group-hover:text-blue-700">ใส่ปุ๋ยให้ถูกพืชก็งาม by อ.ภพ</span>
+                        </a>
+                        <!-- Line OpenChat -->
+                        <a href="https://line.me/ti/g2/I7FoCIyNFx5P3g3duDjoq9AYF4OYvE6ZERNBfQ?utm_source=invitation&utm_medium=QR_code&utm_campaign=default" target="_blank" class="flex items-center gap-3 bg-white p-2 rounded-lg shadow-sm hover:bg-green-50 transition-colors border border-gray-100 group">
+                            <i class="fa-brands fa-line text-green-500 text-3xl w-8 text-center group-hover:scale-110 transition-transform"></i>
+                            <div class="flex flex-col">
+                                <span class="font-medium text-gray-700 group-hover:text-green-700">ปุ๋ยอ.ภพ #ทุเรียนคุณภาพ</span>
+                                <span class="text-xs text-green-600 bg-green-100 px-2 py-0.5 rounded-full w-fit">OpenChat</span>
+                            </div>
+                        </a>
+                        <!-- TikTok -->
+                        <a href="https://vt.tiktok.com/ZSAUQpRvp/" target="_blank" class="flex items-center gap-3 bg-white p-2 rounded-lg shadow-sm hover:bg-gray-50 transition-colors border border-gray-100 group">
+                            <i class="fa-brands fa-tiktok text-black text-3xl w-8 text-center group-hover:scale-110 transition-transform"></i>
+                            <span class="font-medium text-gray-700 group-hover:text-black">metalpob</span>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@ajarnpobsak1613" target="_blank" class="flex items-center gap-3 bg-white p-2 rounded-lg shadow-sm hover:bg-red-50 transition-colors border border-gray-100 group">
+                            <i class="fa-brands fa-youtube text-red-600 text-3xl w-8 text-center group-hover:scale-110 transition-transform"></i>
+                            <span class="font-medium text-gray-700 group-hover:text-red-700">Ajarn Pobsak</span>
+                        </a>
+                    </div>
+
+                    <!-- Right Section Removed (QR Codes) -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex justify-center gap-2 mb-4 flex-wrap">
+                <span class="text-green-500">#ปุ๋ยอาจารย์ภพ</span>
+                <span class="text-white">#agz</span>
+                <span class="text-green-500">#สาระดีๆ</span>
+                <span class="text-white">#ใส่ปุ๋ยให้ถูกพืชก็งาม</span>
+            </div>
+            <p class="text-sm">© 2024 สาระดีๆ จากปุ๋ยอ.ภพ เพื่อพี่น้องชาวสวนทุเรียน</p>
+        </div>
+    </footer>
+    <!-- ================= END USER CODE: BOTTOM ================= -->
+
+</body>
+</html>
